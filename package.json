@@ -1,0 +1,20 @@
+{
+  "name": "api-book",
+  "version": "1.0.0",
+  "description": "Ajout d'une API",
+  "main": "src/index.js",
+  "type": "module",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/RAF1975/api-book.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/RAF1975/api-book/issues"
+  },
+  "homepage": "https://github.com/RAF1975/api-book#readme"
+}
