@@ -1,10 +1,18 @@
 // On importe la libraire fastify
 import fastify from 'fastify'
+import fastifyMongo from 'fastify-mongodb'
+
 
 // On créé une application fastify en utilisant
 // L'import de notre librairie. On configure
 // fastify pour afficher des logs
 const app = fastify({ logger: true })
+
+// On connécte la base de données MongoDB
+app.register(fastifyMongo, {
+  url: 'mongodb+srv://MyTodoApp:MyTodoApp@cluster0.obacx.mongodb.net/myFirstDatabase?retryWrites=true&w=majority'
+})
+
 
 app . get ( '/' ,  async  ( )  =>  {
     return  {  text : " Génial, c'était facile.l'écriture d'une application complexe nécessite beaucoup plus de code que cet exemple. "  }
