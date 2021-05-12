@@ -22,4 +22,13 @@ Content-Type: application/json
 
 ####
 
-PATCH 
+
+PATCH http: // localhost: 3000 / books / 609 a 850 cf 9e4747 ef 299 c 853
+Type de contenu: application / json
+
+{
+           "description"                //  Mettre  ici  les  champs  du  livre  à  mettre  à  jour
+}
+
+###
+SUPPRIMER http: // localhost: 3000 / books / 609 a 850 cf 9e4747 ef 299 c 853PATCH 

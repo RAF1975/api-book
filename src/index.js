@@ -48,6 +48,18 @@ app.get('/books/:id', async (request) => {
   // On retourne le livre récupéré depuis la base de données
   return book
 })
+// Mise à jour d'un livre
+app . patch ( '/ books /: id' ,  async  ( requête )  =>  {
+  // Pour mettre à jour un livre avec MongoDB
+  // il faut utiliser: wait collection.updateOne ({_id: new app.mongo.ObjectId (id)}, nouveauLivre)
+} )
+
+// Suppression d'un livre
+app . delete ( '/ books /: id' ,  async  ( request )  =>  {
+  // Pour supprimer un livre avec MongoDB
+  // il faut utiliser: await collection.deleteOne ({_id: new app.mongo.ObjectId (id)})
+} )
+
 
 // On déclare un schèma qui nous permettra de valider
 // les données envoyé dans la request POST /books
